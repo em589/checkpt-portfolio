@@ -1,75 +1,88 @@
 import styles from './about.module.css'
 
 export const metadata = {
-  title: 'À Propos - Samah SAIDI',
+  title: 'À Propos - Emna MAHDHI',
   description: 'En savoir plus sur mon parcours et mes compétences',
 }
 
 export default function About() {
   const education = [
     {
-      degree: "Ingénieur en Informatique - Data Science & IA",
-      school: "École Polytechnique de Sousse",
-      period: "09/2023 - En cours",
-      location: "Sousse"
+      degree: "Formation en  Software Development Bootcamp with AI skills",
+      school: "Tataouine Hackerspace ",
+      period: "2025 - En cours",
+      location: "Tataouine"
+    },
+     {
+      degree: "Master en valorisation de bio ressources vegetale",
+      school: "Institut Supérieur de biologie appliquée, Medenine",
+      period: "2021 - 2022",
+      location: "Medenine"
     },
     {
-      degree: "Licence en Génie Électrique - Automatisme et Informatique Industrielle",
-      school: "Institut Supérieur des Études Technologique de Nabeul",
-      period: "09/2020 - 06/2023",
-      location: "Nabeul"
+      degree: "Licence en controle qualite de produits alimentaires et hygiene",
+      school: "Institut Supérieur de biologie appliquée, Medenine",
+      period: "2019 - 2020",
+      location: "Medenine"
     },
     {
       degree: "Baccalauréat",
-      school: "Lycée Technique de Médenine",
+      school: "Lycée Ghomrassen",
       period: "09/2019 - 06/2020",
-      location: "Médenine"
+      location: "Tataouine"
     }
   ]
 
   const experience = [
+
     {
-      title: "Stage d'initiation d'ingénierie",
-      company: "WEBACKIN - Zarzis",
-      period: "06/2024 - 08/2024",
-      description: "Développement d'une plateforme de gestion des abonnements dans un club gym"
+      title: "Une année d'expérience dans le domaine sociatif",
+      
+      period: "2024- 2025",
+      
     },
     {
-      title: "Stage projet fin d'étude PFE",
-      company: "AROTEQ Ben Arous - Tunis",
-      period: "02/2023 - 05/2023",
-      description: "Développement et réalisations d'un Machine à trois axes motorisés"
+      title: "Participation à l'Organisation et au suivi des elections ",
+      
+      period: "Octobre 2024",
+      
     },
     {
-      title: "Stage de perfectionnement",
-      company: "Union des briqueteries du sud (UBS)",
-      period: "01/2022 - 02/2022",
-      description: "L'esprit de collaboration | Enrichir les connaissances | Étude de cas Doseur Stockeur"
+      title: "Stage memoire",
+      company: "Industrie agroalimentaires Gourmandise, Sfax",
+      period: "2021 - 2022",
+      description:"Valorisation de l'eleusine : Developpement d'un noveau produit de patisserie destine destiné pour les diabitiques"
+    },
+    {
+      title: "Stage projet fin d'etude PFE",
+      company: "laboratoire d'amelioration et valorisation des vegetaux de l'ISBM",
+      period: "2019 -2020",
+      description: "Etude phytochimique et evaluation sensorielle de tisane à base de Cistus clusii Dun"
     }
   ]
 
-  const certifications = [
-    {
-      name: "CCNA: Switching, Routing, and Wireless Essentials",
-      issuer: "CISCO",
-      icon: "🌐"
-    },
-    {
-      name: "Introduction to Cybersecurity",
-      issuer: "CISCO",
-      icon: "🔒"
-    },
-    {
-      name: "CyberOps Associate",
-      issuer: "CISCO",
-      icon: "🛡️"
-    },
-    {
-      name: "IT Specialist - Python",
-      issuer: "Certiport",
-      icon: "🐍"
-    }
-  ]
+  // const certifications = [
+  //   {
+  //     name: "CCNA: Switching, Routing, and Wireless Essentials",
+  //     issuer: "CISCO",
+  //     icon: "🌐"
+  //   },
+  //   {
+  //     name: "Introduction to Cybersecurity",
+  //     issuer: "CISCO",
+  //     icon: "🔒"
+  //   },
+  //   {
+  //     name: "CyberOps Associate",
+  //     issuer: "CISCO",
+  //     icon: "🛡️"
+  //   },
+  //   {
+  //     name: "IT Specialist - Python",
+  //     issuer: "Certiport",
+  //     icon: "🐍"
+  //   }
+  // ]
 
   return (
     <div className={styles.aboutPage}>
@@ -89,9 +102,7 @@ export default function About() {
           <div className={styles.introCard}>
             <h2>Qui suis-je ?</h2>
             <p>
-              Étudiante ingénieure en informatique, spécialisée en Data Science et Intelligence Artificielle 
-              à l École Polytechnique de Sousse. Passionnée par l analyse de données et les technologies 
-              intelligentes, je me distingue par ma rigueur, mon esprit analytique et ma capacité d adaptation.
+             Titulaire d'une Licence en Contrôle Qualité des Produits Alimentaires et Hygiène et d’un Master en Valorisation des Bio-Ressources Végétales, je possède une solide expertise dans la qualité et les bio-ressources. Actuellement en formation intensive “Software Development Bootcamp with AI Skills”, je développe des compétences en développement logiciel et IA pour combiner sciences, innovation et digitalisation.
             </p>
           </div>
         </div>
@@ -135,7 +146,7 @@ export default function About() {
       </section>
 
       {/* Certifications */}
-      <section className={`section ${styles.certificationsSection}`}>
+      {/* <section className={`section ${styles.certificationsSection}`}>
         <div className="container">
           <h2 className="section-title">📜 Certifications</h2>
           <div className={styles.certificationsGrid}>
@@ -148,7 +159,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Skills */}
       <section className="section">
@@ -160,31 +171,28 @@ export default function About() {
               <div className={styles.skillTags}>
                 <span>Python</span>
                 <span>JavaScript</span>
-                <span>C++</span>
-                <span>C#</span>
+                
                 <span>HTML/CSS</span>
-                <span>PHP</span>
+                
               </div>
             </div>
             <div className="card">
               <h3>Frameworks & Libraries</h3>
               <div className={styles.skillTags}>
                 <span>React</span>
-                <span>Angular</span>
                 <span>Node.js</span>
                 <span>Express</span>
-                <span>Symfony</span>
-                <span>Flutter</span>
+                
               </div>
             </div>
             <div className="card">
               <h3>Big Data & Bases de Données</h3>
               <div className={styles.skillTags}>
-                <span>PySpark</span>
+                
                 <span>Hadoop</span>
                 <span>HBase</span>
                 <span>MongoDB</span>
-                <span>SQL</span>
+                
               </div>
             </div>
           </div>

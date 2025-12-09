@@ -17,54 +17,52 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className="container">
-        <div className={styles.headerContent}>
-          <Link href="/" className={styles.logo}>
-            <span className={styles.logoText}>Samah</span>
-            <span className={styles.logoAccent}>SAIDI</span>
-          </Link>
+      <div className={styles.headerContent}>
+        <Link href="/" className={styles.logo}>
+          <span className={styles.logoText}>Emna</span>
+          <span className={styles.logoAccent}>MAHDHI</span>
+        </Link>
 
-          {/* Desktop Navigation */}
-          <nav className={styles.nav}>
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`${styles.navLink} ${pathname === link.href ? styles.active : ''}`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+        {/* Desktop Navigation */}
+        <nav className={styles.nav}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`${styles.navLink} ${pathname === link.href ? styles.active : ''}`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
-          {/* Mobile Menu Button */}
-          <button 
-            className={styles.menuButton}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span className={styles.menuIcon}></span>
-            <span className={styles.menuIcon}></span>
-            <span className={styles.menuIcon}></span>
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className={styles.mobileNav}>
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ''}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        )}
+        {/* Mobile Menu Button */}
+        <button 
+          className={styles.menuButton}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className={styles.menuIcon}></span>
+          <span className={styles.menuIcon}></span>
+          <span className={styles.menuIcon}></span>
+        </button>
       </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <nav className={styles.mobileNav}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      )}
     </header>
   )
 }

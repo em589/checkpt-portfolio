@@ -2,69 +2,53 @@ import ProjectCard from '@/components/ProjectCard'
 import styles from './projects.module.css'
 
 export const metadata = {
-  title: 'Projets - Samah SAIDI',
-  description: 'Découvrez mes projets en Data Science, développement web et IoT',
+  title: 'Projets - Emna MAHDHI',
+  description: 'Découvrez mes projets en développement web ',
 }
 
 export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Décor - Plateforme de Gestion d'Articles Décoratifs",
-      description: "Application complète de gestion d'articles de décoration avec architecture microservices. Utilise REST, gRPC, GraphQL et Kafka pour la communication entre services.",
-      technologies: ["Angular 17", "Node.js", "MongoDB", "Microservices", "Kafka", "GraphQL"],
+      title: "👥 User List App — React + Axios",
+      description: "Une application React simple qui récupère et affiche des utilisateurs depuis l'API JSONPlaceholder.l'interface est propre, responsive et organisée sous forme de cartes.",
+      technologies: [ "React", "JavaScript", "CSS", "AXIOS"],
       image: "/images/project1.jpg",
       year: "2025",
       category: "Web Development"
     },
     {
       id: 2,
-      title: "Prédiction des Prix Immobiliers en Tunisie",
-      description: "Modèle de Machine Learning (XGBoost) pour prédire les prix immobiliers avec un R² de 0.756. Basé sur plus de 16 000 annonces scrappées du web avec feature engineering et optimisation des hyperparamètres.",
-      technologies: ["Python", "XGBoost", "Web Scraping", "Feature Engineering", "Data Analysis"],
-      image: "/images/project2.jpg",
-      year: "2024",
-      category: "Data Science"
+      title: "🎬 My Favorite Movies App",
+      description: "Une application React simple et élégante pour afficher, filtrer et ajouter vos films ou séries préférés, utilisant les React Hooks (useState) et une architecture par composants.",
+      technologies: ["JavaScript(ES6)", "CSS", "HTML", "React.js"],
+      image: "public/images/image1.PNG",
+      year: "2025",
+      category: "Web Developpent"
     },
     {
       id: 3,
-      title: "Plateforme de Gestion Gym - WEBACKIN",
-      description: "Développement d'une plateforme complète de gestion des abonnements pour un club de sport. Gestion des membres, planning des cours et suivi des paiements.",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      image: "/images/project3.jpg",
-      year: "2024",
+      title: "Plateforme de  Cartier Boutique 💎",
+      description: "Une application React simple mettant en valeur une collection de bijoux de luxe. Elle présente un design élégant grâce à React-Bootstrap et des cartes produits interactives.",
+      technologies: ["React", "React-bootstrap", "CSS", ],
+      image: "public/images/image.PNG",
+      year: "2025",
       category: "Web Development"
     },
     {
       id: 4,
-      title: "Machine à Trois Axes Motorisés",
-      description: "Conception et développement d'une machine CNC à trois axes motorisés dans le cadre du projet de fin d'études. Programmation des contrôleurs et interface utilisateur.",
-      technologies: ["C++", "Arduino", "Automatisme", "Électronique"],
+      title: "📝 React Redux Todo App",
+      description: "Une application de gestion de tâches moderne et élégante construite avec React et Redux, offrant une expérience utilisateur fluide et intuitive.",
+      technologies: ["React", "Redux", "JavaScript", "CSS"],
       image: "/images/project4.jpg",
-      year: "2023",
-      category: "IoT & Robotics"
+      year: "2025",
+      category: "Web Development"
     },
-    {
-      id: 5,
-      title: "Mini Projet Éolienne",
-      description: "Conception et réalisation d'un prototype fonctionnel d'éolienne pour produire de l'énergie renouvelable en transformant l'énergie mécanique du vent en électricité.",
-      technologies: ["Énergie Renouvelable", "Électronique", "Prototypage"],
-      image: "/images/project5.jpg",
-      year: "2022",
-      category: "IoT & Robotics"
-    },
-    {
-      id: 6,
-      title: "Aspirateur Autonome Arduino",
-      description: "Développement d'un robot aspirateur autonome utilisant Arduino. Navigation autonome avec détection d'obstacles et optimisation du parcours de nettoyage.",
-      technologies: ["Arduino", "C++", "Capteurs", "Robotique"],
-      image: "/images/project6.jpg",
-      year: "2022",
-      category: "IoT & Robotics"
-    }
+   
+    
   ]
 
-  const categories = ["Tous", "Web Development", "Data Science", "IoT & Robotics"]
+  const categories = ["Tous", "Web Development"]
 
   return (
     <div className={styles.projectsPage}>
@@ -73,7 +57,7 @@ export default function Projects() {
         <div className="container">
           <h1 className={styles.pageTitle}>Mes Projets</h1>
           <p className={styles.pageSubtitle}>
-            Découvrez mes réalisations en Data Science, développement web et IoT
+            Découvrez mes réalisations en développement web 
           </p>
         </div>
       </section>

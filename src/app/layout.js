@@ -3,8 +3,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Samah SAIDI - Data Science & IA Engineer',
-  description: 'Portfolio de Samah SAIDI - Étudiante ingénieure en Data Science et Intelligence Artificielle',
+  title: 'Emna MAHDHI - Software developer',
+  description: 'Portfolio de Emna MAHDHI - Étudiante ingénieure en Software developer et Intelligence Artificielle',
 }
 
 export default function RootLayout({ children }) {

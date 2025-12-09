@@ -51,7 +51,7 @@ Assurez-vous d'avoir installé:
 
 1️⃣ **Cloner le repository**
 ```bash
-git clone https://github.com/samah-saidi/checkpoint-nextjs-my-portfolio.git
+git clone https://github.com/Emna-MAHDHI/checkpoint-nextjs-my-portfolio.git
 cd checkpoint-nextjs-my-portfolio
 ```
 
@@ -165,14 +165,14 @@ Mettez à jour les informations dans chaque composant:
 **`src/components/HomePage.tsx`**
 ```tsx
 // Changez le nom
-<h1>Hi, I'm <span>Samah SAIDI</span></h1>
+<h1>Hi, I'm <span> Emna MAHDHI </span></h1>
 
 // Changez la description
-<p>Étudiante Ingénieure en Data Science & Intelligence Artificielle</p>
+<p>Étudiante en Software Development Bootcamp with AI skills</p>
 
 
-<a href="https://github.com/votre-username">GitHub</a>
-<a href="www.linkedin.com/in/samah-saidi-005196253">LinkedIn</a>
+<a href="https://github.com/em589/">GitHub</a>
+<a href="www.linkedin.com/in/amna-mahdhi-08117730">LinkedIn</a>
 ```
 
 ### 2️⃣ Compétences Techniques
@@ -354,9 +354,9 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 **Votre Nom**
 
-- 💼 LinkedIn: [@samah SAIDI](www.linkedin.com/in/samah-saidi-005196253)
-- 🐙 GitHub: [@samah-saidi](https://github.com/samah-saidi)
-- 📧 Email: samah.saidi@polytechnicien.tn
+- 💼 LinkedIn: [@samah SAIDI](www.linkedin.com/in/amna-mahdhi-08117730)
+- 🐙 GitHub: [@samah-saidi](https://github.com/em589)
+- 📧 Email: emna52423805@gmail.com
 
 ---
 
