@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
                 Étudiante en Software Development Bootcamp with AI skills
               </h2>
               <p className={styles.heroDescription}>
-                Passionnée par l'analyse de données et les technologies intelligentes, 
+                Passionnée par l&apos;analyse de données et les technologies intelligentes,
                 je me distingue par ma rigueur et mon esprit analytique.
               </p>
               <div className={styles.heroButtons}>
@@ -28,12 +29,15 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
             <div className={styles.heroImage}>
               <div className={styles.imageWrapper}>
-                <img 
-                  src="/images/image.jpg" 
+                <Image
+                  src="/images/image.jpg"
                   alt="Emna MAHDHI"
                   className={styles.profileImage}
+                  width={350}
+                  height={350}
                 />
               </div>
             </div>
@@ -50,7 +54,7 @@ export default function Home() {
               <h3>💻 Développement Web</h3>
               <p>React, Angular, Node.js, Next.js, MongoDB</p>
             </div>
-            
+
             <div className="card">
               <h3>🔧 Autres Tech</h3>
               <p>C++, C#, Flutter, PHP, Symfony</p>
