@@ -35,22 +35,22 @@ export default function About() {
 
   const experience = [
     {
-      title: "Une année d&apos;expérience dans le domaine sociatif",
+      title: "Une année d'expérience dans le domaine sociatif",
       period: "2024- 2025",
     },
     {
-      title: "Participation à l&apos;Organisation et au suivi des elections ",
+      title: "Participation à l'Organisation et au suivi des elections ",
       period: "Octobre 2024",
     },
     {
       title: "Stage memoire",
       company: "Industrie agroalimentaires Gourmandise, Sfax",
       period: "2021 - 2022",
-      description: "Valorisation de l&apos;eleusine : Developpement d&apos;un noveau produit de patisserie destiné pour les diabitiques"
+      description: "Valorisation de l'eleusine : Developpement d'un noveau produit de patisserie destiné pour les diabitiques"
     },
     {
-      title: "Stage projet fin d&apos;etude PFE",
-      company: "laboratoire d&apos;amelioration et valorisation des vegetaux de l&apos;ISBM",
+      title: "Stage projet fin d'etude PFE",
+      company: "laboratoire d'amelioration et valorisation des vegetaux de l'ISBM",
       period: "2019 -2020",
       description: "Etude phytochimique et evaluation sensorielle de tisane à base de Cistus clusii Dun"
     }
